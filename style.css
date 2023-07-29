@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    overflow: auto; /* Hide scrollbars */
+  }
+#container{/* set the properties to the main body */
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e51502d6, #02000ad9);
+    padding: 10px;
+    display: flex;
+}
+.nav-bar{/* nav bar properties */
+    color: beige;
+    width: 100%;
+    background-color: black;
+    font-size: 40px;
+    align-items: center;
+    display: inline-block;
+}
+.navlinks{/* nav link allignments */
+    width: 32%;
+    display: inline-block;
+    height: 80px;
+}
+a {
+    color: inherit; /* will take properties from parent tag*/
+    text-decoration: inherit; /* no underline */
+}
+#logo{
+    height: 75px;
+}
+.search-area{
+    width: 100%;
+    max-width: 800px;
+    background: black;
+    margin: 20px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(144, 12, 12);
+    border-radius: 30px;
+    padding: 10px 20px 10px;
+    margin: 10px 20px 10px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;/*gives the color of background of parent tag */
+    padding: 10px;
+    font-weight: 25px;
+    cursor: text;/*gives I cursor when hover*/
+    color: rgb(254, 236, 236);
+    font-size: 23px;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 16px 50px;
+    background: black;
+    color: rgb(144, 12, 12);
+    font-size: 16px;
+    cursor: pointer;
+}
+.search-container{
+    padding: 1em;
+}
+.container-charecter-image{
+    background-color: white;
+    padding: 0.5em;
+    height: 9.37em;
+    width: 9.37em;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.container-charecter-image img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    width: block;
+    border-radius: 50%;
+}
+.charecter-name{
+    padding: 0.5em 0 0.8em 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.charecter-description{
+    text-align: justify;
+    color: rgb(194, 194, 194);
+    line-height: 2em;
+    font-weight: 300;
+}
+.list{
+    position: absolute;
+    min-width: 400px;
+    background-color: rgb(85, 85, 85);
+    color: beige;
+    z-index: 1;/* drop down suggestion list comes up */
+    margin-left: 30px;
+}
+.autocomeplete-item {
+    background-color: rgb(85, 85, 85);
+    color: beige;
+    border: 5px solid black;
+    border-radius: 5%; /* Set the border radius */
+}

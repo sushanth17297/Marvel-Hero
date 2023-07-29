@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Hero Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- creating navigation toolbar -->
+        <div class="nav-bar">
+            <div class="navlinks">
+                <a href="#" id="home">Home</a>
+            </div>
+            <div class="navlinks">
+                <img src="images/Logo.png" id="logo">
+            </div>
+            <div class="navlinks">
+                <a href="favourites.html" id="favourites">Favourites</a>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <div class="search-area">
+            <div class="search-bar">
+                <input type="text" id="input-box" placeholder="Search"><!--input to add tasks-->
+                <button id="search">Add</button>
+            </div>
+            <div class="list"></div>
+            <!-- the search will be displayed here to confirm the choice with image-->
+            <div class="search-container" id="show-container"></div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

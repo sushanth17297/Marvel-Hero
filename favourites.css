@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    overflow-y: hidden; /* Hide scrollbars */
+    min-width: 700px;
+}
+header {
+    margin-bottom: -20px; /* Add negative margin to remove the white space */
+}
+#main-container{
+    background: linear-gradient(135deg, #e51502d6, #02000ad9);
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align the items to center horizontally */
+}
+#container{
+    height: 70%;
+    max-height: 800px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    align-items: center; /* Align children vertically */
+    justify-content: center; /* Align children horizontally */
+    background-color: rgba(0, 0, 0, 0.25); /* Add 25% transparency (alpha value of 0.75) */
+    border-radius: 10px;
+    position: relative;
+    top: -35px;
+}
+.nav-bar{
+    color: beige;
+    width: 100%;
+    background-color: black;
+    font-size: 40px;
+    align-items: center;
+    display: inline-block;
+}
+.navlinks{
+    /*margin-right: 200px;*/
+    width: 32%;
+    display: inline-block;
+    height: 80px;
+}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+#logo{
+    height: 75px;
+}
+.fav-rec{
+    background-color: black;
+    min-height: 350px;
+    width: 300px; 
+    margin: 15px; 
+    border-radius: 15px; 
+}
+.img-div{
+    background-color: rgb(179, 34, 34);
+    padding: 0.5em;
+    height: 14em;
+    width: 14em;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 20px; /* Add margin-top to move the img-div down */
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    width: block;
+    border-radius: 50%;
+}
+.hero-name{
+    margin-top: 25px;
+    padding: 0.5em 0 0.8em 0;
+    text-align: center;
+    color: rgb(149, 149, 149);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+}

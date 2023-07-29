@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Details</title>
+    <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+    <header>
+        <!-- creating navigation toolbar -->
+        <div class="nav-bar">
+            <div class="navlinks">
+                <a href="index.html" id="home">Home</a>
+            </div>
+            <div class="navlinks">
+                <img src="images/Logo.png" id="logo">
+            </div>
+            <div class="navlinks">
+                <a href="favourites.html" id="favourites">Favourites</a>
+            </div>
+        </div>
+    </header>
+    <div id="main-container">
+        <div class="main-details">
+            <!-- hero main details will be shown here-->
+            <div id="hero-img" class="pre-info"></div>
+            <div id="hero-name" class="pre-info">Hero Name</div>
+            <div id="hero-desc" class="pre-info">Hero Description</div>
+            <button id="add-favourites" onclick="addFav()">Add to Favourites</button>
+        </div>
+        <div id="container">
+            <!-- comics, stories, series will be shown here in 3 different boxes-->
+            <div class="show-details">
+                <h3>Comics</h3>
+                <ul id="comics">
+                </ul>
+            </div>
+            <div class="show-details">
+                <h3>Stories</h3>
+                <ul id="stories">
+                </ul>
+            </div>
+            <div class="show-details">
+                <h3>series</h3>
+                <ul id="series">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="heroScript.js"></script>
+</body>
+</html>
